@@ -60,7 +60,7 @@ The testbench (`tb_fifo.v`) includes **12 directed test cases** covering all fun
 
 You can easily modify the FIFO's configuration:
 
-▶️ Running the Simulation
+##▶️ Running the Simulation
 🖥 Siemens Questa/ Synopsys VCS
 bash
 Copy
@@ -72,7 +72,7 @@ run -all
 
 Replace +TESTCASE=1 with any number between 1–12 to run a specific test case.
 
-📚 Topics Covered
+##📚 Topics Covered
 FIFO RTL design and parameterization
 
 Read/write pointer logic with wrap-around
@@ -83,7 +83,7 @@ Testbench construction with reusable tasks
 
 Edge case handling (overflow, underflow, reset)
 
-🚀 Future Enhancements
+##🚀 Future Enhancements
 Implement an Asynchronous FIFO (dual clock domains)
 
 Use Gray-coded pointers for metastability mitigation
