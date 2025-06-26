@@ -63,7 +63,7 @@ Data_width=8,
 Depth=16
 
 
-##▶️ Running the Simulation
+▶️ Running the Simulation
 ---
 
 🖥 Siemens Questa/ Synopsys VCS
@@ -77,7 +77,7 @@ run -all
 
 Replace +TESTCASE=1 with any number between 1–12 to run a specific test case.
 
-##📚 Topics Covered
+📚 Topics Covered
 ---
 
 FIFO RTL design and parameterization
@@ -91,7 +91,7 @@ Testbench construction with reusable tasks
 Edge case handling (overflow, underflow, reset)
 
 
-##🚀 Future Enhancements
+🚀 Future Enhancements
 ---
 
 Implement an Asynchronous FIFO (dual clock domains)
