@@ -1,8 +1,12 @@
 # 🔁 Synchronous FIFO Memory Design and Verification
-
-This project implements a **parameterized synchronous FIFO (First-In-First-Out)** memory module using Verilog, along with a **comprehensive testbench** to validate its functionality across 12 directed test cases.
-
 ---
+ ● Designed and implemented a parameterized synchronous FIFO (First-In-First-Out) memory to enable reliable data buffering in a
+   single clock domain.
+ ● Handled corner cases such as overflow, underflow, pointer wrap-around, full, and empty conditions.
+ ● Developed a comprehensive Verilog testbench with 10+ directed test cases to validate functionality and robustness.
+ ● Utilized circular pointer and parameterized depth and width to optimize resource utilization and scalability.
+ ● Exposure: Verilog HDL, Siemens Questa, EDA Playground, Digital Design, FIFO.
+
 
 ## 📌 Overview
 
