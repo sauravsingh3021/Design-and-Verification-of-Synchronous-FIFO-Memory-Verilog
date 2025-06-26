@@ -30,8 +30,8 @@ A FIFO memory is a critical digital design component used to buffer data between
 
 ---
 .
-├── fifo.v # FIFO design module
-├── tb_fifo.v # Testbench with 12 directed test cases
+├── design.sv # FIFO design module
+├── testbench.sv # Testbench with 12 directed test cases
 ├── dump.vcd # Optional waveform file
 ├── README.md # Project documentation
 
@@ -60,12 +60,8 @@ The testbench (`tb_fifo.v`) includes **12 directed test cases** covering all fun
 
 You can easily modify the FIFO's configuration:
 
-```verilog
-parameter DATA_WIDTH = 8;
-parameter DEPTH = 16;
-
 ▶️ Running the Simulation
-🖥 Using ModelSim/QuestaSim
+🖥 Siemens Questa/ Synopsys VCS
 bash
 Copy
 Edit
@@ -76,31 +72,6 @@ run -all
 
 Replace +TESTCASE=1 with any number between 1–12 to run a specific test case.
 
-🌐 Using EDA Playground
-Go to EDA Playground
-
-Paste the fifo.v and tb_fifo.v code into the appropriate sections
-
-Select Questa Advanced (2020.4) as the simulator
-
-Add simulation option: +TESTCASE=1
-
-Click Run to simulate and view results
-
-📈 Viewing Waveforms (Optional)
-If waveform dumping is enabled via:
-
-verilog
-Copy
-Edit
-$dumpfile("dump.vcd");
-$dumpvars(0, tb_fifo);
-You can use GTKWave to view the waveform:
-
-bash
-Copy
-Edit
-gtkwave dump.vcd
 📚 Topics Covered
 FIFO RTL design and parameterization
 
@@ -116,13 +87,5 @@ Edge case handling (overflow, underflow, reset)
 Implement an Asynchronous FIFO (dual clock domains)
 
 Use Gray-coded pointers for metastability mitigation
-
-Add AXI/AXIS FIFO wrapper for SoC integration
-
-👨‍💻 Author
-Your Name
-Digital Design & Verification Enthusiast
-📧 your.email@example.com
-🔗 GitHub
 
 
