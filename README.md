@@ -61,9 +61,11 @@ The testbench (`tb_fifo.v`) includes **12 directed test cases** covering all fun
 You can easily modify the FIFO's configuration:
 Data_width=8,
 Depth=16
----
+
 
 ##▶️ Running the Simulation
+---
+
 🖥 Siemens Questa/ Synopsys VCS
 bash
 Copy
@@ -74,9 +76,10 @@ vsim tb_fifo +TESTCASE=1
 run -all
 
 Replace +TESTCASE=1 with any number between 1–12 to run a specific test case.
----
 
 ##📚 Topics Covered
+---
+
 FIFO RTL design and parameterization
 
 Read/write pointer logic with wrap-around
@@ -86,12 +89,14 @@ Count-based full/empty detection
 Testbench construction with reusable tasks
 
 Edge case handling (overflow, underflow, reset)
----
+
 
 ##🚀 Future Enhancements
+---
+
 Implement an Asynchronous FIFO (dual clock domains)
 
 Use Gray-coded pointers for metastability mitigation
----
+
 
 
